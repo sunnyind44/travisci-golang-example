@@ -3,8 +3,6 @@ go:
  - release
  - tip
 env:
-  global:
-  - ARTIFACTS_DEBUG=1
-  
+  global:  
 script:
  - go test -v ./...
