@@ -2,6 +2,13 @@ language: go
 go: 
  - tip
 env:
-  global:  
+  global:
+before_script:
+   - "gem install travis-artifacts"  
 script:
  - go test -v ./...
+deploy:
+  provider: s3
+  access_key_id: "AKIAIOR6P26SLGZCFBKA"
+  secret_access_key: "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"
+  bucket: "S3 Bucket" 
