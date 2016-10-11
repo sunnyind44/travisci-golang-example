@@ -4,7 +4,7 @@ go:
 env:
   global:
 before_script:
-   - gem install travis-artifacts 
+   - gem install mime-types -v 2.6.2
 script:
  - go test -v ./...
 deploy:
