@@ -2,6 +2,7 @@ language: go
 go: 
  - tip
 script:
+ - go build
  - go test -v ./...
 after_success:
   - eval "$(ssh-agent -s)" #start the ssh agent
