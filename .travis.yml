@@ -4,7 +4,7 @@ go:
 env:
   global:
 before_script:
-   - "gem install travis-artifacts"  
+   - gem install travis-artifacts 
 script:
  - go test -v ./...
 deploy:
