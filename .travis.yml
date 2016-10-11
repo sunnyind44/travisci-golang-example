@@ -1,14 +1,11 @@
 language: go
 go: 
  - tip
-env:
-  global:
-before_script:
-   - gem install mime-types -v 2.6.2
 script:
  - go test -v ./...
-deploy:
-  provider: s3
-  access_key_id: "AKIAIOR6P26SLGZCFBKA"
-  secret_access_key: "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"
-  bucket: "S3 Bucket" 
+after_success:
+  - eval "$(ssh-agent -s)" #start the ssh agent
+  - chmod 600 .travis/deploy_key.pem # this key should have push access
+  - ssh-add .travis/deploy_key.pem
+  - git remote add deploy DEPLOY_REPO_URI_GOES_HERE
+  - git push deploy
