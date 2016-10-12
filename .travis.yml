@@ -4,9 +4,10 @@ go:
 script:
  - go build
  - go test -v ./...
-after_success:
-  - eval "$(ssh-agent -s)" #start the ssh agent
-  - chmod 600 .travis/deploy_key.pem # this key should have push access
-  - ssh-add .travis/deploy_key.pem
-  - git remote add deploy https://github.ibm.com/data-protect/containers-services
-  - git push deploy
+deploy:
+  provider: releases
+  api_key: 9ce0e51ae038aa4b1cedeb8805cb9082f866c31d
+  file: sqrt
+  skip_cleanup: true
+  on:
+    tags: true
