@@ -11,5 +11,5 @@ deploy:
   file: sqrt.exe
   skip_cleanup: true
   on:
-    repo: sunnyind44/hello-world
+    repo: sunnyind44/travis-broken-example
     all_branches: true
