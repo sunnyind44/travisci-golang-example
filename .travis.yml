@@ -4,9 +4,6 @@ go:
 script:
 - go build
 - go test -v ./...
-branches: 
-  only: 
-  - master
 deploy:
   provider: releases
   api_key:
