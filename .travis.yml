@@ -12,5 +12,5 @@ deploy:
   file: sqrt.go
   skip_cleanup: true
   on:
-    repo: sunnyind44/travis-broken-example
+    repo: sunnyind44/travisci-golang-example
     all_branches: true
