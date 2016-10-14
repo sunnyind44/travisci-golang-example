@@ -4,7 +4,6 @@ go:
 script:
 - go build
 - go test -v ./...
-- find .
 deploy:
   provider: releases
   api_key:
