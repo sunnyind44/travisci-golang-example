@@ -1,6 +1,9 @@
 language: go
 go:
 - tip
+sudo: required
+services:
+- docker
 script:
 - go build
 - go test -v ./...
