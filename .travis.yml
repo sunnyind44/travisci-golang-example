@@ -7,8 +7,9 @@ services:
 script:
 - go build
 - go test -v ./...
-- docker build -t sqrt .
 - find .
+install:
+- docker build -t sqrt .
 deploy:
   provider: releases
   api_key:
