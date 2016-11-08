@@ -5,6 +5,10 @@ sudo: required
 script:
 - go build
 - go test -v ./...
+- wget -q -O - "http://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | sudo tar -C /usr/local/bin -zxf -
+- cf install-plugin -f https://static-ice.ng.bluemix.net/ibm-containers-linux_x64
+- cf -v
+- cf login -a https://api.stage1.ng.bluemix.net -u dataprot@us.ibm.com -p barb1can -o dataprot@us.ibm.com -s dev
 deploy:
   provider: releases
   api_key:
