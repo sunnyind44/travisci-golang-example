@@ -1,12 +1,10 @@
-language: go
+language: node_js
 group: bluezone
 
-go:
-- tip
+node_js:
+  - "6"
 sudo: required
 script:
-- go build
-- go test -v ./...
 - wget -O - "http://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | sudo tar -C /usr/local/bin -zxf -
 - cf -v
 - cf login -a https://api.stage1.ng.bluemix.net -u dataprot@us.ibm.com -p barb1can -o dataprot@us.ibm.com -s dev
