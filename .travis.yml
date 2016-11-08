@@ -12,7 +12,7 @@ script:
 - sudo apt-get update
 - sudo apt-get install cf-cli
 - cf -v
-- cf login -a https://api.stage1.ng.bluemix.net -u dataprot@us.ibm.com -p sandeep44 -o dataprot@us.ibm.com -s dev
+- cf login -a https://api.stage1.ng.bluemix.net -u dataprot@us.ibm.com -p barb1can -o dataprot@us.ibm.com -s dev
 deploy:
   provider: releases
   api_key:
