@@ -19,4 +19,4 @@ deploy:
     secure: jaRh8NTve/CS+q1hIbyPP5eJMTUXBNhGRbKETQSHRuwTmbb+JQr+tgrAyA2wxs+gcKIOnzqMKUuKQy3Y7WvjEfbkqCED/xynYydU5dF/JaslkeAGenQuw1isN9cUgOkr+4jmLlQSoWei0McuZI/YCHgDKJiE5CbSZEHgJ87biSniG9PtmQs7pdyMNIoBohrTe0rVuul8IkL3U7xkiO1qqxSymGieYN6WlHUAqElnY44EoVbS/Q9JFwWLlbqdrTFqbITF7QUb8LtLy7+9CnUNlqkBbr0Htq1yyDYXJNczEQthBSlE9kD3soFDn2Ek16TYh0BNajR5ofo75xjE3MXfUjSKO/iQe4CE8hnbpiSGCFEuDx13XPvEL9XbbSW2B5fTFijkExBy6E7fF4evAJZL7hSFCurMH5RvdeuJSpZ/jKEMsBFNWh4nQ+AwktUfaLaw85A/MOxQZyLxRzqnpcMThaLUG/U3nK8ROCDKXN6OEo757pIGIb51fJrdTTvRsg/HLHbCuR03eJTHGD5XncknwTB+s0iH8Edd2acK8I/raC1YAeKDiu4oEafoF0wF7tmxD2lpb5NLKspO6QqMgL/AOvKTwuo5+U0/gB4utMua4hu/voCd87RkHduavmNVaZlR+JH+BFa2Z5/+LC/X+FqvKjfARdxFP0Yqp/avTAmpoms=
   on:
     repo: sunnyind44/travisci-golang-example
-    all_branches: true
+  
