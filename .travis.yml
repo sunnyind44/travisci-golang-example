@@ -1,4 +1,6 @@
 language: go
+group: bluezone
+
 go:
 - tip
 sudo: required
