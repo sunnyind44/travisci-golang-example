@@ -7,10 +7,12 @@ sudo: required
 script:
 - go build
 - go test -v ./...
-- wget -q -O - "http://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | sudo tar -C /usr/local/bin -zxf -
-- cf install-plugin -f https://static-ice.ng.bluemix.net/ibm-containers-linux_x64
+- wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+- echo "deb http://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+- sudo apt-get update
+- sudo apt-get install cf-cli
 - cf -v
-- cf login -a https://api.stage1.ng.bluemix.net -u ssirivo@us.ibm.com -p sandeep44 -o ssirivo@us.ibm.com -s dev
+- cf login -a https://api.stage1.ng.bluemix.net -u dataprot@us.ibm.com -p sandeep44 -o dataprot@us.ibm.com -s dev
 deploy:
   provider: releases
   api_key:
